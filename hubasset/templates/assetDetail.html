@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AssetDetailInformation</title>
+    <a href="/">back to home</a>
+</head>
+<body>
+<h4>AssetDetailInformation:</h4>
+<center>
+    {% for item in sh_detail_list %}
+     <table border="1" cellpadding="0" cellspacing="0" width="760" height="100%" >
+
+                              <tr>
+                               <th style="width:30%;" >id</th>
+                               <th>{{ item.id }}</th>
+                              </tr>
+                              <tr>
+                               <th style="width:30%;">asset-ID</th>
+                               <th>{{ item.asset_id }}</th>
+                              </tr>
+                              <tr>
+                               <th style="width:30%;">bams-ID</th>
+                               <th>{{ item.bams_id }}</th>
+                              </tr>
+                              <tr>
+                               <th style="width:30%;">hostname</th>
+                               <th>{{ item.hostname }}</th>
+                              </tr>
+                              <tr>
+                               <th style="width:30%;">ip_addr</th>
+                               <th>{{ item.ip_addr }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">ilom_ip</th>
+                                <th>{{ item.ilom_ip }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">device_typ</th>
+                                <th>{{ item.device_type }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">is_Virtual_Instance</th>
+                                <th>{{ item.get_is_Virtual_Instance_display }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">cpu_num</th>
+                                <th>{{ item.cpu_num }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">memory</th>
+                                <th>{{ item.memory }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">usage_catalog</th>
+                                <th>{{ item.usage_catalog }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">OS</th>
+                                <th>{{ item.usage_catalog }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">hub_zone</th>
+                                <th>{{ item.hub_zone }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">vlan</th>
+                                <th>{{ item.vlan }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">comment</th>
+                                <th>{{ item.comment }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">dataroom</th>
+                                <th>{{ item.dataroom }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">row</th>
+                                <th>{{ item.row }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">rack</th>
+                                <th>{{ item.rack }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">ru_no</th>
+                                <th>{{ item.ru_no }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">row</th>
+                                <th>{{ item.row }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">price</th>
+                                <th>{{ item.price }}</th>
+                              </tr>
+                              <tr>
+                              <th style="width:30%;">product</th>
+                              <th>{{ item.product }}</th>
+                              </tr>
+                                                <tr>
+                                <th style="width:30%;">pdu</th>
+                                <th>{{ item.pdu }}</th>
+                              </tr>
+                              <tr>
+                                <th style="width:30%;">vm_host</th>
+                                <th>{{ item.get_vm_host_display }}</th>
+                              </tr>
+
+                            </table>
+        {% endfor %}
+</center>
+</body>
+</html>
